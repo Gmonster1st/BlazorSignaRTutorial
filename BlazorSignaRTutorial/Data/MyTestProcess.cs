@@ -7,21 +7,11 @@ namespace BlazorSignaRTutorial.Data
 {
     public class MyTestProcess
     {
-        private readonly NavigationManager navigationManager;
         private HubConnection _hubConnection;
         private bool open;
 
-        public MyTestProcess(NavigationManager navigationManager)
+        public MyTestProcess()
         {
-            this.navigationManager = navigationManager;
-
-            //_hubConnection.On<string, string>("ReceiveMessage", (user, message) =>
-            //{
-            //    var encodedMsg = $"{user}: {message}";
-            //    messages.Add(encodedMsg);
-            //    InvokeAsync(StateHasChanged);
-            //});
-
         }
 
 
